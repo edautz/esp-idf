@@ -49,7 +49,6 @@ components/mbedtls/port/include/
 components/mbedtls/mbedtls/include/mbedtls/
 
 components/coap/
-components/nghttp/
 
 components/esp-tls/private_include/
 
@@ -59,8 +58,6 @@ components/mdns/include/mdns_console.h
 
 components/esp_serial_slave_link/include/esp_serial_slave_link/essl.h
 components/esp_serial_slave_link/include/esp_serial_slave_link/essl_sdio.h
-
-components/expat/
 
 components/fatfs/vfs/vfs_fat_internal.h
 components/fatfs/src/ffconf.h

@@ -513,7 +513,6 @@ components/esp_hid/src/esp_hidd.c
 components/esp_hid/test/hid_descriptor.h
 components/esp_hid/test/test_esp_hid.c
 components/esp_https_ota/include/esp_https_ota.h
-components/esp_https_ota/src/esp_https_ota.c
 components/esp_hw_support/include/esp_clk.h
 components/esp_hw_support/include/soc/esp_himem.h
 components/esp_hw_support/include/soc/esp_spiram.h
@@ -844,8 +843,6 @@ components/espcoredump/src/core_dump_uart.c
 components/espcoredump/src/port/riscv/core_dump_port.c
 components/espcoredump/test/test_espcoredump.py
 components/espcoredump/test_apps/main/test_core_dump.c
-components/expat/port/include/expat_config.h
-components/expat/test/test_expat.c
 components/fatfs/diskio/diskio.c
 components/fatfs/diskio/diskio_impl.h
 components/fatfs/diskio/diskio_rawflash.c
@@ -1126,7 +1123,6 @@ components/hal/include/hal/soc_hal.h
 components/hal/include/hal/spi_flash_encrypt_hal.h
 components/hal/include/hal/spi_flash_hal.h
 components/hal/include/hal/spi_flash_types.h
-components/hal/include/hal/spi_hal.h
 components/hal/include/hal/spi_slave_hal.h
 components/hal/include/hal/spi_slave_hd_hal.h
 components/hal/include/hal/systimer_hal.h
@@ -1158,8 +1154,6 @@ components/hal/soc_hal.c
 components/hal/spi_flash_encrypt_hal_iram.c
 components/hal/spi_flash_hal.c
 components/hal/spi_flash_hal_gpspi.c
-components/hal/spi_hal.c
-components/hal/spi_hal_iram.c
 components/hal/spi_slave_hal.c
 components/hal/spi_slave_hal_iram.c
 components/hal/spi_slave_hd_hal.c
@@ -1196,9 +1190,6 @@ components/heap/test/test_realloc.c
 components/heap/test/test_runtime_heap_reg.c
 components/heap/test_multi_heap_host/main.cpp
 components/heap/test_multi_heap_host/test_multi_heap.cpp
-components/idf_test/include/esp32/idf_performance_target.h
-components/idf_test/include/esp32c3/idf_performance_target.h
-components/idf_test/include/esp32h2/idf_performance_target.h
 components/idf_test/include/idf_performance.h
 components/linux/include/sys/queue.h
 components/log/esp_log_private.h
@@ -1216,7 +1207,6 @@ components/lwip/include/apps/ping/ping_sock.h
 components/lwip/include/apps/sntp/sntp.h
 components/lwip/port/esp32/debug/lwip_debug.c
 components/lwip/port/esp32/freertos/sys_arch.c
-components/lwip/port/esp32/hooks/lwip_default_hooks.c
 components/lwip/port/esp32/hooks/tcp_isn_default.c
 components/lwip/port/esp32/include/arch/cc.h
 components/lwip/port/esp32/include/arch/perf.h
@@ -1224,7 +1214,6 @@ components/lwip/port/esp32/include/arch/sys_arch.h
 components/lwip/port/esp32/include/arch/vfs_lwip.h
 components/lwip/port/esp32/include/arpa/inet.h
 components/lwip/port/esp32/include/debug/lwip_debug.h
-components/lwip/port/esp32/include/lwip_default_hooks.h
 components/lwip/port/esp32/include/netdb.h
 components/lwip/port/esp32/include/netif/dhcp_state.h
 components/lwip/port/esp32/include/netif/ethernetif.h
@@ -1243,7 +1232,6 @@ components/lwip/test_afl_host/dhcp_di.h
 components/lwip/test_afl_host/dhcpserver_di.h
 components/lwip/test_afl_host/dns_di.h
 components/lwip/test_afl_host/esp_attr.h
-components/lwip/test_afl_host/esp_netif_loopback_mock.c
 components/lwip/test_afl_host/network_mock.c
 components/lwip/test_afl_host/no_warn_host.h
 components/lwip/test_afl_host/test_dhcp_client.c
@@ -1350,7 +1338,6 @@ components/mdns/mdns_networking_lwip.c
 components/mdns/private_include/mdns_networking.h
 components/mdns/test/test_mdns.c
 components/mdns/test_afl_fuzz_host/esp32_mock.c
-components/mdns/test_afl_fuzz_host/esp32_mock.h
 components/mdns/test_afl_fuzz_host/esp_attr.h
 components/mdns/test_afl_fuzz_host/esp_netif_mock.c
 components/mdns/test_afl_fuzz_host/mdns_di.h
@@ -1398,11 +1385,6 @@ components/newlib/test/test_time.c
 components/newlib/test_apps/app_test.py
 components/newlib/test_apps/main/test_newlib_main.c
 components/newlib/test_apps/main/test_stdatomic.c
-components/newlib/time.c
-components/nghttp/port/http_parser.c
-components/nghttp/port/include/http_parser.h
-components/nghttp/port/include/nghttp2/nghttp2ver.h
-components/nghttp/private_include/config.h
 components/nvs_flash/host_test/fixtures/test_fixtures.hpp
 components/nvs_flash/host_test/nvs_page_test/main/nvs_page_test.cpp
 components/nvs_flash/include/nvs.h
@@ -2105,7 +2087,6 @@ components/vfs/include/esp_vfs_eventfd.h
 components/vfs/include/esp_vfs_semihost.h
 components/vfs/test/test_vfs_access.c
 components/vfs/test/test_vfs_append.c
-components/vfs/test/test_vfs_fd.c
 components/vfs/test/test_vfs_lwip.c
 components/vfs/test/test_vfs_paths.c
 components/vfs/test/test_vfs_select.c
@@ -2671,7 +2652,6 @@ examples/protocols/esp_local_ctrl/main/app_main.c
 examples/protocols/esp_local_ctrl/main/esp_local_ctrl_service.c
 examples/protocols/esp_local_ctrl/scripts/esp_local_ctrl.py
 examples/protocols/esp_local_ctrl/scripts/proto_lc.py
-examples/protocols/http2_request/components/sh2lib/sh2lib.h
 examples/protocols/http2_request/main/http2_request_example_main.c
 examples/protocols/http_request/main/http_request_example_main.c
 examples/protocols/http_server/advanced_tests/http_server_advanced_test.py
@@ -3028,8 +3008,6 @@ tools/ldgen/output_commands.py
 tools/ldgen/samples/template.ld
 tools/ldgen/sdkconfig.py
 tools/ldgen/test/data/linker_script.ld
-tools/ldgen/test/test_entity.py
-tools/ldgen/test/test_output_commands.py
 tools/mass_mfg/mfg_gen.py
 tools/mkdfu.py
 tools/mkuf2.py
