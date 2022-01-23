@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# SPDX-FileCopyrightText: 2019-2021 Espressif Systems (Shanghai) CO LTD
+# SPDX-FileCopyrightText: 2019-2022 Espressif Systems (Shanghai) CO LTD
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -88,23 +88,6 @@ def check_environment():
         python_version_checker.check()
     except RuntimeError as e:
         raise FatalError(e)
-
-    # check Python dependencies
-    checks_output.append('Checking Python dependencies...')
-    try:
-        out = subprocess.check_output(
-            [
-                os.environ['PYTHON'],
-                os.path.join(os.environ['IDF_PATH'], 'tools', 'check_python_dependencies.py'),
-            ],
-            env=os.environ,
-        )
-
-        checks_output.append(out.decode('utf-8', 'ignore').strip())
-    except subprocess.CalledProcessError as e:
-        print_warning(e.output.decode('utf-8', 'ignore'), stream=sys.stderr)
-        debug_print_idf_version()
-        raise SystemExit(1)
 
     return checks_output
 

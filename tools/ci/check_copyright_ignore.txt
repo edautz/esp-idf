@@ -617,6 +617,7 @@ components/esp_rom/include/esp32/rom/sha.h
 components/esp_rom/include/esp32/rom/tbconsole.h
 components/esp_rom/include/esp32/rom/tjpgd.h
 components/esp_rom/include/esp32/rom/uart.h
+components/esp_rom/include/esp32c2/rom/md5_hash.h
 components/esp_rom/include/esp32c3/rom/aes.h
 components/esp_rom/include/esp32c3/rom/apb_backup_dma.h
 components/esp_rom/include/esp32c3/rom/bigint.h
@@ -718,7 +719,6 @@ components/esp_rom/include/esp32s3/rom/usb/usb_device.h
 components/esp_rom/include/esp32s3/rom/usb/usb_dfu.h
 components/esp_rom/include/esp32s3/rom/usb/usb_os_glue.h
 components/esp_rom/include/esp32s3/rom/usb/usb_persist.h
-components/esp_rom/include/esp8684/rom/md5_hash.h
 components/esp_rom/include/esp_rom_crc.h
 components/esp_rom/include/esp_rom_efuse.h
 components/esp_rom/include/esp_rom_gpio.h
@@ -1254,11 +1254,11 @@ components/mbedtls/port/crypto_shared_gdma/esp_crypto_shared_gdma.c
 components/mbedtls/port/dynamic/esp_ssl_cli.c
 components/mbedtls/port/dynamic/esp_ssl_srv.c
 components/mbedtls/port/esp32/bignum.c
+components/mbedtls/port/esp32c2/bignum.c
 components/mbedtls/port/esp32c3/bignum.c
 components/mbedtls/port/esp32h2/bignum.c
 components/mbedtls/port/esp32s2/bignum.c
 components/mbedtls/port/esp32s3/bignum.c
-components/mbedtls/port/esp8684/bignum.c
 components/mbedtls/port/esp_bignum.c
 components/mbedtls/port/esp_hardware.c
 components/mbedtls/port/esp_mem.c
@@ -2041,7 +2041,6 @@ components/tcp_transport/test/tcp_transport_fixtures.h
 components/tcp_transport/test/test_transport_basic.c
 components/tcp_transport/test/test_transport_connect.c
 components/tcp_transport/test/test_transport_fixtures.c
-components/tcp_transport/transport.c
 components/tcp_transport/transport_ssl.c
 components/tcp_transport/transport_utils.c
 components/tcpip_adapter/include/tcpip_adapter.h
@@ -2062,20 +2061,14 @@ components/touch_element/touch_element.c
 components/touch_element/touch_matrix.c
 components/touch_element/touch_slider.c
 components/ulp/esp32ulp_mapgen.py
-components/ulp/include/ulp_common.h
 components/ulp/ld/esp32.ulp.ld
 components/ulp/ld/esp32s2.ulp.riscv.ld
 components/ulp/test/esp32/test_ulp.c
 components/ulp/test/esp32/test_ulp_as.c
-components/ulp/test/esp32s2/test_ulp_riscv.c
-components/ulp/test/ulp_riscv/test_main.c
 components/ulp/ulp_macro.c
 components/ulp/ulp_private.h
 components/ulp/ulp_riscv/include/ulp_riscv/ulp_riscv.h
-components/ulp/ulp_riscv/include/ulp_riscv/ulp_riscv_gpio.h
 components/ulp/ulp_riscv/include/ulp_riscv/ulp_riscv_register_ops.h
-components/ulp/ulp_riscv/include/ulp_riscv/ulp_riscv_utils.h
-components/ulp/ulp_riscv/ulp_riscv_utils.c
 components/unity/include/priv/setjmp.h
 components/unity/include/unity_config.h
 components/unity/include/unity_fixture_extras.h
